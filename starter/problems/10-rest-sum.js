@@ -10,8 +10,14 @@ restSum(0); // => 0
 ***********************************************************************/
 
 // you'll need to change the parameters!
-function restSum() {
+function restSum(...num) {
   // your code here
+  let sum = 0
+  num.forEach(element => {
+    sum += element
+
+  })
+  return sum
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
