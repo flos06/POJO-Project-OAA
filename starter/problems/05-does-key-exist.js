@@ -12,6 +12,9 @@ doesKeyExist(obj1, 'name'); // => false
 
 function doesKeyExist(obj, key) {
   // your code here
+ let exist = key in obj;
+
+ return exist
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

@@ -12,7 +12,12 @@ getFullName(p2); // => 'Charlie Brown'
 
 function getFullName(person) {
   // your code here
+ 
+ let fullN = person['firstName'] + ' ' + person['lastName']
+ console.log(fullN)
+return fullN
 }
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = getFullName;
