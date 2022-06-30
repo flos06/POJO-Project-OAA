@@ -30,7 +30,23 @@ appleCounter(obj3); // => 3
 
 function appleCounter(appleObj) {
   // your code here
+let apple = 'apple'
+let appleCounter = 0
+  let allK = Object.keys(appleObj)
+  
+  let lowerC = allK.map(key => key.toLowerCase())
+
+  lowerC.forEach(element => {
+
+    if (element.includes(apple)){
+      
+      appleCounter += 1
+    }
+  })
+  return appleCounter
 }
+
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = appleCounter;
