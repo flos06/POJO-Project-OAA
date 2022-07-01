@@ -13,6 +13,11 @@ console.log(arrayConverter(["apple", "banana", "potato", "banana"])); // => {app
 
 function arrayConverter(array) {
   // your code here
+  const occurrences = array.reduce(function (acc, curr) {
+    return acc[curr] ? ++acc[curr] : acc[curr] = 1, acc
+  }, {});
+  
+  return occurrences // => {2: 5, 4: 1, 5: 3, 9: 1}
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
